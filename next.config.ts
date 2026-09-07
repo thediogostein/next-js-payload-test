@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  serverExternalPackages: ['jose', 'pg-cloudflare'],
   webpack: (webpackConfig) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],
